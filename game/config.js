@@ -1,6 +1,6 @@
 window.config={
 	extension_sources:{
-		jiaowansha:'https://raw.jiaowanshausercontent.com/libccy/noname-extension/master/',
+		gitHub:'https://ghproxy.com/https://raw.githubusercontent.com/lxraytop/jiaowan/master/',
 	},
 	extension_source:'Coding',
 	forbidai:['ns_liuzhang','yuji','re_yuji'],

@@ -378,7 +378,7 @@ var Adapter3DTouch = function (_Adapter2) {
 
     // this checks up to 6 times on a touch to see if the touch can read a force value
     // if the force value has changed it means the device supports pressure
-    // more info from this issue https://jiaowansha.com/yamartino/pressure/issues/15
+    // more info from this issue https://gitHub.com/yamartino/pressure/issues/15
 
   }, {
     key: 'supportLegacy',

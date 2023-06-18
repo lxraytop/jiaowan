@@ -1,4 +1,4 @@
-"use strict";
+﻿"use strict";
 (function(){
 	if(!localStorage.getItem('noname_alerted')){
 		localStorage.setItem('noname_alerted',true);
@@ -41,11 +41,11 @@
 		configprefix:'noname_0.9_',
 		versionOL:27,
 		updateURLS:{
-			coding:'https://jiaowanshay.com/https://raw.jiaowanshausercontent.com/libccy/noname',
-			jiaowansha:'https://raw.jiaowanshausercontent.com/libccy/noname',
+			coding:'https://ghproxy.com/https://raw.githubusercontent.com/lxraytop/jiaowan/master/',
+			gitHub:'https://raw.githubusercontent.com/lxraytop/jiaowan/master/',
 		},
-		updateURL:'https://raw.jiaowanshausercontent.com/libccy/noname',
-		mirrorURL:'https://nakamurayuri.jiaowanshacoding.net/p/noname/d/noname/git/raw',
+		updateURL:'https://raw.githubusercontent.com/lxraytop/jiaowan/master/',
+		mirrorURL:'https://ghproxy.com/https://raw.githubusercontent.com/lxraytop/jiaowan/master/',
 		hallURL:'47.99.105.222',
 		assetURL:'',
 		changeLog:[],
@@ -550,8 +550,8 @@
 						init:'coding',
 						unfrequent:true,
 						item:{
-							coding:'jiaowansha Proxy',
-							jiaowansha:'jiaowansha',
+							coding:'gitHub Proxy',
+							gitHub:'gitHub',
 						},
 						onclick:function(item){
 							game.saveConfig('update_link',item);
@@ -6696,7 +6696,7 @@
 			globalId:0,
 		},
 		help:{
-			'关于游戏':'<div style="margin:10px">关于角完杀</div><ul style="margin-top:0"><li>角完杀官方发布地址仅有jiaowansha仓库！<br><a href="http://lxray.top/">RAY互联</a><br><li>角完杀基于GPLv3开源协议。<br><a href="https://www.gnu.org/licenses/gpl-3.0.html">点击查看GPLv3协议</a><br><li>',
+			'关于游戏':'<div style="margin:10px">关于角完杀</div><ul style="margin-top:0"><li>角完杀官方发布地址仅有gitHub仓库！<br><a href="http://lxray.top/">RAY互联</a><br><li>角完杀基于GPLv3开源协议。<br><a href="https://www.gnu.org/licenses/gpl-3.0.html">点击查看GPLv3协议</a><br><li>',
 			'游戏操作':'<ul><li>长按/鼠标悬停/右键单击显示信息。<li>触屏模式中，双指点击切换暂停；下划显示菜单，上划切换托管。<li>键盘快捷键<br>'+
 			'<table><tr><td>A<td>切换托管<tr><td>W<td>切换不询问无懈<tr><td>空格<td>暂停</table><li>编辑牌堆<br>在卡牌包中修改牌堆后，将自动创建一个临时牌堆，在所有模式中共用，当保存当前牌堆后，临时牌堆被清除。每个模式可设置不同的已保存牌堆，设置的牌堆优先级大于临时牌堆。</ul>',
 			'游戏命令':'<div style="margin:10px">变量名</div><ul style="margin-top:0"><li>场上角色<br>game.players<li>阵亡角色<br>game.dead'+
@@ -43516,7 +43516,7 @@
 								});
 							}
 							else{
-								lib.init.req(extensionURL.replace(/raw\.jiaowanshausercontent\.com/,'rawgit.com')+'catalog.js',function(){
+								lib.init.req(extensionURL.replace(/raw\.gitHubusjiaocontent\.com/,'rawgit.com')+'catalog.js',function(){
 									try{
 										eval(this.responseText);
 									}
@@ -43619,8 +43619,8 @@
 						var li2=document.createElement('li');
 						var li3=document.createElement('li');
 						var trimurl=function(str){
-							if(str==lib.updateURLS.jiaowansha){
-								return 'jiaowansha';
+							if(str==lib.updateURLS.gitHub){
+								return 'gitHub';
 							}
 							if(str==lib.updateURLS.coding){
 								return 'Coding';
@@ -44075,7 +44075,7 @@
 							updatepx.style.whiteSpace='nowrap';
 							updatepx.style.marginTop='8px';
 							var buttonx=ui.create.node('button','访问项目主页',function(){
-								window.open('https://jiaowansha.com/libccy/noname');
+								window.open('https://gitHub.com/lxraytop/jiaowan');
 							});
 							updatepx.appendChild(buttonx);
 							ui.updateUpdate=function(){

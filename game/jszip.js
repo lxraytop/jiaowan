@@ -4,10 +4,10 @@ JSZip - A Javascript class for generating and reading zip files
 <http://stuartk.com/jszip>
 
 (c) 2009-2014 Stuart Knightley <stuart [at] stuartk.com>
-Dual licenced under the MIT license or GPLv3. See https://raw.jiaowansha.com/Stuk/jszip/master/LICENSE.markdown.
+Dual licenced under the MIT license or GPLv3. See https://raw.gitHub.com/Stuk/jszip/master/LICENSE.markdown.
 
 JSZip uses the library pako released under the MIT license :
-https://jiaowansha.com/nodeca/pako/blob/master/LICENSE
+https://gitHub.com/nodeca/pako/blob/master/LICENSE
 */
 !function(e){if("object"==typeof exports&&"undefined"!=typeof module)module.exports=e();else if("function"==typeof define&&define.amd)define([],e);else{var f;"undefined"!=typeof window?f=window:"undefined"!=typeof global?f=global:"undefined"!=typeof self&&(f=self),f.JSZip=e()}}(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
 'use strict';
@@ -1722,7 +1722,7 @@ var nodeBuffer = _dereq_('./nodeBuffer');
 
 /**
  * The following functions come from pako, from pako/lib/utils/strings
- * released under the MIT license, see pako https://jiaowansha.com/nodeca/pako/
+ * released under the MIT license, see pako https://gitHub.com/nodeca/pako/
  */
 
 // Table with utf8 lengths (calculated by first byte of sequence)
@@ -2400,7 +2400,7 @@ ZipEntries.prototype = {
 
             if (isGarbage) {
                 throw new Error("Can't find end of central directory : is this a zip file ? " +
-                                "If it is, see http://stuk.jiaowansha.io/jszip/documentation/howto/read_zip.html");
+                                "If it is, see http://stuk.gitHub.io/jszip/documentation/howto/read_zip.html");
             } else {
                 throw new Error("Corrupted zip : can't find end of central directory");
             }

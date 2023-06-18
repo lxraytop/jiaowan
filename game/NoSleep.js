@@ -142,7 +142,7 @@ var NoSleep = function () {
     value: function enable() {
       if (oldIOS) {
         this.disable();
-        console.warn('\n        NoSleep enabled for older iOS devices. This can interrupt\n        active or long-running network requests from completing successfully.\n        See https://jiaowansha.com/richtr/NoSleep.js/issues/15 for more details.\n      ');
+        console.warn('\n        NoSleep enabled for older iOS devices. This can interrupt\n        active or long-running network requests from completing successfully.\n        See https://gitHub.com/richtr/NoSleep.js/issues/15 for more details.\n      ');
         this.noSleepTimer = window.setInterval(function () {
           if (!document.hidden) {
             window.location.href = window.location.href.split('#')[0];
